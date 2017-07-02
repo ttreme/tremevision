@@ -1,6 +1,19 @@
-{{home}}
 
+
+<input type="text" ng-model="query">
+
+<button ng-click="searchFunction(query)">Search</button>
+
+<div ng-repeat="video in group track by $index">
+    <div>
+        {{video.snippet.title}}
+    </div>
+</div>
+
+{{home}}
+<!--
 
 <iframe id="player" type="text/html" width="640" height="390"
   src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
   frameborder="0"></iframe>
+-->
